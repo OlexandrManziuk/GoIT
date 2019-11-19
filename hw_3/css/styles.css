@@ -1,0 +1,119 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+.header_line {
+  padding-top: 77px;
+  padding-bottom: 102px;
+}
+
+.menu_list {
+  text-align: center;
+  list-style: none;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 0;
+  font-stretch: extra-condensed;
+}
+
+.menu_button {
+  display: inline-block;
+  margin-right: 75px;
+}
+
+.menu_list .menu_button {
+  font-size: 15px;
+}
+
+.menu_list li:last-child {
+  margin-right: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #666666;
+}
+a:hover {
+  color: #08b1ff;
+}
+.articles {
+  width: 900px;
+  margin: 0 auto;
+  font-size: 0;
+  padding-bottom: 70px;
+}
+
+img {
+  padding: 0;
+  margin-bottom: 30px;
+}
+.clause {
+  display: inline-block;
+  width: 420px;
+  margin-right: 60px;
+  text-align: left;
+  font-size: 16px;
+  font-style: normal;
+  margin-bottom: 144px;
+}
+.clause:nth-child(6) {
+  margin-bottom: 0;
+}
+.clause:nth-child(5) {
+  margin-bottom: 0;
+}
+.clause:nth-child(2n) {
+  margin-right: 0;
+}
+.article_text {
+  margin-bottom: 50px;
+  color: #666666;
+}
+.relation {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-stretch: extra-condensed;
+  color: #a6a6a6;
+  text-align: justify;
+  margin-bottom: 35px;
+}
+.article_title {
+  font-size: 27px;
+  color: #666666;
+  font-weight: 100;
+  margin-bottom: 45px;
+  margin-top: 0;
+}
+.load_click {
+  display: inline-block;
+  padding: 21px 34px 22px 34px;
+  font-size: 20px;
+  border: 1px;
+  border-color: #666666;
+  border-style: solid;
+  border-width: 1px;
+  background-color: inherit;
+  margin-top: 58px;
+  display: block;
+  margin: 58px auto;
+  margin-bottom: 70px;
+}
+button.load_click {
+  font-family: "Times New Roman", Times, serif;
+  color: #666666;
+}
