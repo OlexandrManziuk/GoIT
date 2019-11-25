@@ -9,6 +9,11 @@ html {
   margin: 0;
 }
 
+.container{
+  width: 900px;
+  margin: 0 auto;
+}
+
 .header_line {
   padding-top: 77px;
   padding-bottom: 102px;
@@ -49,10 +54,10 @@ a:hover {
   color: #08b1ff;
 }
 .articles {
-  width: 900px;
-  margin: 0 auto;
+  /* width: 900px;
+  margin: 0 auto; */
   font-size: 0;
-  padding-bottom: 70px;
+  padding-bottom: 30px;
 }
 
 img {
@@ -66,7 +71,8 @@ img {
   text-align: left;
   font-size: 16px;
   font-style: normal;
-  margin-bottom: 144px;
+  margin-bottom: 100px;
+  /* margin-bottom: 144px; */
 }
 .clause:nth-child(6) {
   margin-bottom: 0;
@@ -78,7 +84,7 @@ img {
   margin-right: 0;
 }
 .article_text {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #666666;
 }
 .relation {
@@ -96,7 +102,6 @@ img {
   font-size: 27px;
   color: #666666;
   font-weight: 100;
-  margin-bottom: 45px;
   margin-top: 0;
 }
 .load_click {
@@ -108,12 +113,14 @@ img {
   border-style: solid;
   border-width: 1px;
   background-color: inherit;
-  margin-top: 58px;
   display: block;
   margin: 58px auto;
-  margin-bottom: 70px;
 }
 button.load_click {
   font-family: "Times New Roman", Times, serif;
   color: #666666;
+}
+button:hover {
+  color: #ffffff;
+  background-color: #08b1ff;
 }
