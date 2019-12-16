@@ -174,7 +174,7 @@ img {
 }
 .second-menu {
     width: 350px;
-    height: 496px;
+    /* height: 496px; */
     float: left;
 }
 .second-menu:not(:last-child) {
@@ -205,6 +205,9 @@ img {
     color: #515151;
 }
 .read-more-article {
+    display: block;
+    width: 160px;
+    border-radius: 2px;
     padding: 20px 42px;
     color: #fff;
     background-color: #1abc9c;
