@@ -2,19 +2,23 @@ html {
   box-sizing: border-box;
   margin: 0 auto;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
+
 body {
   display: block;
-  font-family: "OpenSans" sans-serif;
+  /* font-family: "OpenSans" sans-serif; */
   font-size: 18px;
   line-height: 12px;
+  position: relative;
 }
+
 .container {
-  width: 1110px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
@@ -23,6 +27,7 @@ body {
   display: table;
   clear: both;
 }
+
 .land-page {
   background-color: #eaf0fd;
 }
@@ -41,6 +46,7 @@ body {
   color: #515151;
   font-size: 24px;
 }
+
 a:hover {
   cursor: pointer;
   transition: 0.4s;
@@ -60,6 +66,7 @@ a {
   text-decoration: none;
   color: #000000;
 }
+
 a:hover {
   color: #1abd9c;
   cursor: pointer;
@@ -72,12 +79,15 @@ a:hover {
   text-align: middle;
   list-style: none;
 }
+
 .site-navigation li {
   float: left;
 }
+
 .site-navigation li:not(:last-child) {
   margin-right: 36px;
 }
+
 .site-navigation a {
   text-decoration: none;
   color: #000000;
@@ -87,6 +97,7 @@ a:hover {
   line-height: 11px;
   margin-bottom: 111px;
 }
+
 .site-navigation a:hover,
 .site-navigation a:focus {
   color: #1abc9c;
@@ -96,9 +107,16 @@ a:hover {
   position: relative;
   margin: 0 auto;
   min-height: 600px;
+  background-image: url(../img/slide4.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+
 .slider::before {
-  position: absolute;
+  position: relative;
   content: "";
   display: block;
   width: 100%;
@@ -111,6 +129,7 @@ a:hover {
   top: 0;
   left: 0;
 }
+
 .slider::after {
   position: absolute;
   content: "";
@@ -123,12 +142,13 @@ a:hover {
   left: 0;
 }
 
-.slider-contain {
+.slider-container {
   position: relative;
   padding: 200px 0px;
   margin: 0;
   z-index: 1;
 }
+
 .slider-ctrl {
   display: inline-block;
   position: absolute;
@@ -145,10 +165,12 @@ a:hover {
   opacity: 0.7;
   color: #ffffff;
 }
+
 .slider-ctrl:hover {
   opacity: 1;
   transition: 0.1s;
 }
+
 .slider-ctrl-prev {
   left: 90px;
   background-image: url(../img/icons/prev.png);
@@ -156,6 +178,7 @@ a:hover {
   background-position: center;
   z-index: 1;
 }
+
 .slider-ctrl-next {
   right: 90px;
   background-image: url(../img/icons/next.png);
@@ -163,10 +186,18 @@ a:hover {
   background-position: center;
   z-index: 1;
 }
-.slider-title {
+
+.slider-list {
+  position: relative;
   margin: 0;
   padding: 0;
-  padding-bottom: 20px;
+  list-style: none;
+}
+
+.slider-title {
+  max-width: 790px;
+  margin: 0;
+  padding: 0 0 20px 0;
   line-height: 82px;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -174,7 +205,9 @@ a:hover {
   font-weight: 900;
   transform: translate(30%);
 }
+
 .slider-text {
+  max-width: 790px;
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -193,26 +226,31 @@ a:hover {
   font-weight: 900;
   line-height: 58px;
   text-align: center;
-  margin-top: 100px 0px 80px 0px;
+  padding: 100px 0px 80px 0px;;
+  margin: 0;
 }
+
 .new-collection-title::after {
   content: "";
   display: block;
+  margin: 0 auto;
   height: 6px;
-  margin: 24px auto 0px;
   width: 166px;
+  text-align: center;
   background-color: #1abc9c;
-  margin-bottom: 36px 0px 25px 0px;
 }
+
 .new-collection {
   width: 1110px;
   margin: 0 auto;
 }
+
 .new-collection-list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
+
 .new-collection-picture {
   position: relative;
   float: left;
@@ -240,6 +278,7 @@ a:hover {
   line-height: 32px;
   transition: 0.2s;
 }
+
 .item-price {
   position: absolute;
   right: 0;
@@ -253,27 +292,30 @@ a:hover {
   color: #ffffff;
   transition: 0.2s;
 }
+
 .new-collection-picture:hover .item-title {
   background-color: #1abc9c;
 }
+
 .new-collection-picture:hover .item-price {
   background-color: #62ecd1;
 }
+
 .new-collection-button {
   position: absolute;
   top: 8px;
   left: 10px;
   opacity: 0;
-  background-color: rgba (0, 0, 0, 0.6);
   width: 235px;
   height: 235px;
-  border: 1px solid #ffffff;
   transition: 0.2s;
 }
+
 .new-collection-picture:hover .new-collection-button {
   opacity: 1;
   background-color: rgb(0, 0, 2, 0.52);
 }
+
 .button-heart {
   background-image: url(../img/icons/heart.png);
   margin-top: 80px;
@@ -287,11 +329,13 @@ a:hover {
   cursor: pointer;
   transition: 0.2s;
 }
+
 .button-heart:hover {
   opacity: 1;
   background-color: #1abc9c;
   border: 1px solid #1abc9c;
 }
+
 .button-arrows {
   background-image: url(../img/icons/arrows.png);
   margin-top: 80px;
@@ -304,11 +348,13 @@ a:hover {
   cursor: pointer;
   transition: 0.2s;
 }
+
 .button-arrows:hover {
   opacity: 1;
   background-color: #1abc9c;
   border: 1px solid #1abc9c;
 }
+
 .button-clock {
   background-image: url(../img/icons/clock.png);
   width: 50px;
@@ -320,11 +366,13 @@ a:hover {
   cursor: pointer;
   transition: 0.2s;
 }
+
 .button-clock:hover {
   opacity: 1;
   background-color: #1abc9c;
   border: 1px solid #1abc9c;
 }
+
 .button-cart {
   background-image: url(../img/icons/cart.png);
   width: 160px;
@@ -340,11 +388,13 @@ a:hover {
   vertical-align: middle;
   transition: 0.2s;
 }
+
 .button-cart:hover {
   opacity: 1;
   background-color: #1abc9c;
   border: 1px solid #1abc9c;
 }
+
 .footer {
   margin: 0 auto;
   background-color: #323232;
@@ -354,6 +404,7 @@ a:hover {
   height: 88px;
   width: 100%;
 }
+
 .footer-info {
   margin: 0;
   display: inline-block;
@@ -364,6 +415,7 @@ a:hover {
   line-height: 28px;
   color: #ffffff;
 }
+
 a {
   text-decoration: none;
   color: #46bfa9;

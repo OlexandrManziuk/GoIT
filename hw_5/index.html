@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Homework-5</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300, 400, 900&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300, 400, 900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -27,11 +27,15 @@
     <main class="land-page">
         <section>
             <div class="slider">
-                <div class="slider-contain">
+                <div class="slider-container">
                     <button class="slider-ctrl slider-ctrl-prev"></button>
                     <button class="slider-ctrl slider-ctrl-next"></button>
-                    <p class="slider-title">AFFORDABLE PARIS TOURS</p>
-                    <p class="slider-text">CITY TOURS / TOUR TICKETS / TOUR GIDES</p>
+                    <ul class="slider-list">
+                        <li>
+                            <h2 class="slider-title">AFFORDABLE PARIS TOURS</h2>
+                            <p class="slider-text">CITY TOURS / TOUR TICKETS / TOUR GIDES</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -39,11 +43,11 @@
             <h2 class="new-collection-title">NEW COLLECTION</h2>
             <ul class="new-collection-list clearfix">
                 <li class="new-collection-picture">
+                    <img class="item-img" src="img/category-1.png" alt="man in blue t-shirt" with="255" height="322">
                     <a href="#" class="collection-link">
-                        <img class="item-img" src="img/category-1.png" alt="man in blue t-shirt" with="255" height="322">
                         <p class="item-title">BLUE TSHIRT</p>
-                        <p class="item-price">$26</p>
                     </a>
+                    <p class="item-price">$26</p>
                     <div class="new-collection-button">
                         <button class="button-heart"></button>
                         <button class="button-arrows"></button>
@@ -52,11 +56,11 @@
                     </div>
                 </li>
                 <li class="new-collection-picture">
-                    <a href="#" class="collection">
-                        <img class="item-img" src="img/category-2.png" alt="woman in dress" with="255" height="322">
+                    <img class="item-img" src="img/category-2.png" alt="woman in dress" with="255" height="322">
+                    <a href="#" class="collection-link">
                         <p class="item-title">WOMAN SHIRT</p>
-                        <p class="item-price">$31</p>
                     </a>
+                    <p class="item-price">$31</p>
                     <div class="new-collection-button">
                         <button class="button-heart"></button>
                         <button class="button-arrows"></button>
@@ -65,11 +69,12 @@
                     </div>
                 </li>
                 <li class="new-collection-picture">
-                    <a href="#" class="collection">
-                        <img class="item-img" src="img/category-3.png" alt="man in yellow t-shirt" with="255" height="322">
+                    <img class="item-img" src="img/category-3.png" alt="man in yellow t-shirt" with="255"
+                            height="322">
+                    <a href="#" class="collection-link">
                         <p class="item-title">YELLOW TSHIRT</p>
-                        <p class="item-price">$21</p>
                     </a>
+                    <p class="item-price">$21</p>
                     <div class="new-collection-button">
                         <button class="button-heart"></button>
                         <button class="button-arrows"></button>
@@ -78,11 +83,12 @@
                     </div>
                 </li>
                 <li class="new-collection-picture">
-                    <a href="#" class="collection">
-                        <img class="item-img" src="img/category-4.png" alt="woman in beach dress" with="255" height="322">
+                    <img class="item-img" src="img/category-4.png" alt="woman in beach dress" with="255"
+                            height="322">
+                    <a href="#" class="collection-link">
                         <p class="item-title">COOL LINGERIE</p>
-                        <p class="item-price">$56</p>
                     </a>
+                    <p class="item-price">$56</p>
                     <div class="new-collection-button">
                         <button class="button-heart"></button>
                         <button class="button-arrows"></button>
@@ -94,8 +100,7 @@
         </section>
     </main>
     <footer class="footer">
-        <p class="footer-info">All Rights Reserved © Dokan | Designed
-            <a href="#">ThemenGraph</a>
+        <p class="footer-info">All Rights Reserved © Dokan | Designed <a href="#">ThemenGraph</a>
         </p>
     </footer>
 </body>
