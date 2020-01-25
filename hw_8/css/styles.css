@@ -253,7 +253,7 @@ header h3 {
 
 /* TABLET */
 
-@media (min-width: 321px) {
+@media (min-width: 320px) {
   header {
     background: url(../img/Background768.png) no-repeat center #333333;
     background-size: cover;
@@ -288,14 +288,11 @@ header h3 {
 
 /* DESKTOP */
 
-@media (min-width: 769px) {
+@media (min-width: 940px) {
   header {
     background: url(../img/Background1440.png) no-repeat center #333333;
     background-size: cover;
   }
-}
-
-@media (min-width: 1440px) {
   .menu {
     padding-right: 0;
   }
