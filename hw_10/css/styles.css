@@ -99,15 +99,15 @@ img {
   fill: #ffffff;
 }
 
-.site-navigation:hover {
+.site-navigation__link:hover {
   border-bottom: 3px solid #fce38a;
   color: #fce38a;
 }
-.site-navigation__list-icon {
+.site-navigation__item-icon {
   color: #ffffff;
   fill: #ffffff;
 }
-.site-navigation__list-icon:hover {
+.site-navigation__item-icon:hover {
   border-bottom: 3px solid #fce38a;
   color: #fce38a;
 }
