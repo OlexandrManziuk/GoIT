@@ -10,7 +10,6 @@ html {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -47,7 +46,7 @@ img {
     ),
     url(../img/Layer_15.png);
 }
-.page-nav {
+.page-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,17 +63,13 @@ img {
   padding: 26px;
   text-decoration: none;
 }
-/* Style for "MoGo" */
 .picture-logo {
   margin: 0;
-  width: 86px;
-  height: 23px;
   color: #ffffff;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
 }
-
 .picture-logo:hover {
   color: #fce38a;
   -webkit-transition: 0.15s;
@@ -95,7 +90,7 @@ img {
   -ms-flex-align: center;
   align-items: center;
 }
-.site-nav__link {
+.site-navigation__link {
   text-decoration: none;
   color: #ffffff;
   font-size: 14px;
@@ -104,19 +99,27 @@ img {
   fill: #ffffff;
 }
 
-.site-nav:hover {
+.site-navigation:hover {
   border-bottom: 3px solid #fce38a;
   color: #fce38a;
 }
-.site-nav__list-icon {
+.site-navigation__list-icon {
   color: #ffffff;
   fill: #ffffff;
 }
-.site-nav__list-icon:hover {
+.site-navigation__list-icon:hover {
   border-bottom: 3px solid #fce38a;
   color: #fce38a;
 }
-/* my header end*/
+.small-title {
+  color: #ffffff;
+  font-family: "Kaushan Script", "Arial", sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 20px;
+  margin-top: 180px;
+}
 .title {
   width: 840px;
   margin: 0 auto;
@@ -127,15 +130,6 @@ img {
   line-height: 140px;
   text-transform: uppercase;
   text-align: center;
-}
-.small-title {
-  color: #ffffff;
-  font-family: "Kaushan Script", "Arial", sans-serif;
-  font-size: 72px;
-  font-weight: 400;
-  text-align: center;
-  margin: 0 0 20px;
-  margin-top: 180px;
 }
 .button1 {
   margin: 0;
@@ -154,13 +148,15 @@ img {
   margin-top: 124px;
   scroll-margin-bottom: 230px;
 }
-/* my service-section start*/
-.service__title1 {
+.services-team__section {
+  padding: 0;
+  margin-bottom: 78px;
+}
+.services-team__title1 {
   margin-top: 100px;
   padding: 0;
 }
-.service__title1 {
-  /* Style for "We work wi" */
+.services-team__title1 {
   color: #333333;
   font-family: "Kaushan Script";
   font-size: 24px;
@@ -171,10 +167,9 @@ img {
   text-align: center;
   margin-top: 46px;
 }
-.service__title2 {
+.services-team__title2 {
   margin: 0;
   padding: 0;
-  /* Style for "Amazing Service" */
   color: #333333;
   font-family: Montserrat;
   font-size: 30px;
@@ -183,7 +178,7 @@ img {
   text-align: center;
   margin-bottom: 64px;
 }
-.service__title2::after {
+.services-team__title2::after {
   content: "";
   display: block;
   margin: 0 auto;
@@ -192,6 +187,7 @@ img {
   background-color: #f38181;
   margin-top: 40px;
 }
+/* SERVICES */
 .service-list {
   margin: 0;
   padding: 0;
@@ -209,8 +205,26 @@ img {
   width: 384px;
   position: relative;
   padding-left: 80px;
-
   padding-bottom: 0;
+  background-repeat: no-repeat;
+}
+.photography {
+  background-image: url(../img/icons/ALARM.png);
+}
+.web-design {
+  background-image: url(../img/icons/LINE_GRAPH.png);
+}
+.creativity {
+  background-image: url(../img/icons/COMPUTER_OK.png);
+}
+.seo {
+  background-image: url(../img/icons/BOOK_2.png);
+}
+.css-html {
+  background-image: url(../img/icons/HOME.png);
+}
+.digital {
+  background-image: url(../img/icons/DIGITAL.png);
 }
 .service-list__item:nth-child(3n) {
   margin-right: 0;
@@ -244,42 +258,7 @@ img {
 .team-icons__link {
   color: #95e1d3;
 }
-/* service-section end */
-/* section-team start*/
-.team {
-  padding: 0;
-  margin-bottom: 78px;
-}
-.team__title1 {
-  color: #333333;
-  font-family: "Kaushan Script";
-  font-size: 24px;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 17px;
-  text-align: center;
-}
-.team__title2 {
-  margin: 0;
-  padding: 0;
-  color: #333333;
-  font-family: Montserrat;
-  font-size: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 42px;
-}
-.team__title2::after {
-  content: "";
-  display: block;
-  margin: 0 auto;
-  width: 60px;
-  height: 3px;
-  background-color: #f38181;
-  margin-top: 40px;
-}
+/* TEAM */
 .team__text {
   /* Style for "Lorem ipsu" */
   color: #999999;
