@@ -157,6 +157,7 @@ img {
   padding: 0;
 }
 .services-team__title1 {
+  display: block;
   color: #333333;
   font-family: "Kaushan Script";
   font-size: 24px;
@@ -168,13 +169,13 @@ img {
   margin-top: 46px;
 }
 .services-team__title2 {
+  display: block;
   margin: 0;
   padding: 0;
   color: #333333;
   font-family: Montserrat;
   font-size: 30px;
   font-weight: 700;
-  text-transform: uppercase;
   text-align: center;
   margin-bottom: 64px;
 }
@@ -208,22 +209,22 @@ img {
   padding-bottom: 0;
   background-repeat: no-repeat;
 }
-.photography {
+.service-list__item--photography {
   background-image: url(../img/icons/ALARM.png);
 }
-.web-design {
+.service-list__item--web-design {
   background-image: url(../img/icons/LINE_GRAPH.png);
 }
-.creativity {
+.service-list__item--creativity {
   background-image: url(../img/icons/COMPUTER_OK.png);
 }
-.seo {
+.service-list__item--seo {
   background-image: url(../img/icons/BOOK_2.png);
 }
-.css-html {
+.service-list__item--css-html {
   background-image: url(../img/icons/HOME.png);
 }
-.digital {
+.service-list__item--digital {
   background-image: url(../img/icons/DIGITAL.png);
 }
 .service-list__item:nth-child(3n) {
