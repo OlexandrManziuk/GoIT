@@ -1,0 +1,121 @@
+.page-header {
+  min-height: 1000px;
+  background-position: center;
+  background-size: cover;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(238, 137, 138, 0.9)),
+      to(rgba(238, 215, 136, 0.9))
+    ),
+    url(../images/Layer_15.png);
+}
+
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.site-logo {
+  display: flex;
+  margin: 0;
+  padding: 26px;
+  text-decoration: none;
+}
+
+.picture-logo {
+  margin: 0;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.picture-logo:hover {
+  color: #fce38a;
+  transition: 0.15s;
+}
+
+.site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  list-style: none;
+  justify-content: space-between;
+  width: 620px;
+  align-items: center;
+}
+
+.site-navigation__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 0;
+  fill: #ffffff;
+}
+
+.site-navigation__link:hover {
+  border-bottom: 3px solid #fce38a;
+  color: #fce38a;
+}
+
+.site-navigation__item-icon {
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+.site-navigation__item-icon:hover {
+  border-bottom: 3px solid #fce38a;
+  color: #fce38a;
+}
+
+.small-title {
+  color: #ffffff;
+  font-family: 'Kaushan Script', 'Arial', sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 20px;
+  margin-top: 180px;
+}
+
+.title {
+  width: 840px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 140px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button1 {
+  margin: 0;
+  width: 160px;
+  height: 40px;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-left: 45%;
+  margin-top: 124px;
+  scroll-margin-bottom: 230px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #f8c50b;
+    border: none;
+    transition: 0.2s;
+  }
+}

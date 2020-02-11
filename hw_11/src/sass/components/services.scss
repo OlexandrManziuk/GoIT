@@ -1,0 +1,74 @@
+.service-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.service-list__item {
+  width: 384px;
+  position: relative;
+  padding-left: 80px;
+  padding-bottom: 0;
+  background-repeat: no-repeat;
+}
+
+.service-list__item--photography {
+  background-image: url(../images/icons/ALARM.png);
+}
+
+.service-list__item--web-design {
+  background-image: url(../images/icons/LINE_GRAPH.png);
+}
+
+.service-list__item--creativity {
+  background-image: url(../images/icons/COMPUTER_OK.png);
+}
+
+.service-list__item--seo {
+  background-image: url(../images/icons/BOOK_2.png);
+}
+
+.service-list__item--css-html {
+  background-image: url(../images/icons/HOME.png);
+}
+
+.service-list__item--digital {
+  background-image: url(../images/icons/DIGITAL.png);
+}
+
+.service-list__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.service-list__list-title {
+  margin-top: 0;
+  color: #333333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.service-list__list-text {
+  color: #999999;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 92px;
+}
+
+.services-icon {
+  position: absolute;
+  color: #95e1d3;
+  top: 0;
+  left: 0;
+  transform: translateX(50%);
+}
+
+.team-icons__link {
+  color: #95e1d3;
+}

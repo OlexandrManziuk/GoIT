@@ -1,0 +1,154 @@
+.team__text {
+  color: #999999;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 980px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-left: 130px;
+  margin-bottom: 92px;
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.team-icons {
+  position: absolute;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  width: 224px;
+  height: 56px;
+  background-color: #fce38a;
+  cursor: pointer;
+  top: 35%;
+  margin-left: 70px;
+  justify-content: space-between;
+  transition: 0.2s linear;
+  opacity: 0;
+  z-index: 3;
+}
+
+.member-img:hover.team-icons {
+  opacity: 1;
+}
+
+.team-icons__internet {
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-right: 1px solid #f38181;
+  transition: 0.2s linear;
+  z-index: 2;
+  fill: #f38181;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+
+  &:hover {
+    background-color: #f38181;
+    fill: #ffffff;
+    opacity: 1;
+  }
+}
+
+.team-img {
+  display: block;
+  object-fit: cover;
+  transition: 200ms linear, transform 200ms linear;;
+}
+
+.member-img {
+  position: relative;
+  width: 380px;
+  height: 470px;
+  transform: translate(0, 0);
+  transition: 0.2s linear;
+
+  &:hover {
+    transform: translate(-10px, -10px);
+  }
+}
+
+.member-img::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 380px;
+  height: 470px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(238, 137, 138, 0.9)),
+    to(rgba(238, 215, 136, 0.9))
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(238, 137, 138, 0.9),
+    rgba(238, 215, 136, 0.9)
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(238, 137, 138, 0.9),
+    rgba(238, 215, 136, 0.9)
+  );
+  z-index: 1;
+  opacity: 0;
+}
+
+.team__list-member:hover .member-img::before {
+  opacity: 1;
+}
+
+.team__list-member:hover .team-icons {
+  opacity: 1;
+}
+
+.team__list-member::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 380px;
+  height: 470px;
+  background-color: #95e1d3;
+  transition: 0.2s linear;
+}
+
+.team-list__member-name {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.team-list__prof {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 300;
+  font-style: italic;
+  color: #999999;
+  line-height: 24px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}

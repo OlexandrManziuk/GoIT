@@ -1,0 +1,44 @@
+.services-team__section {
+  padding: 0;
+  margin-bottom: 78px;
+}
+
+.services-team__title1 {
+  margin-top: 100px;
+  padding: 0;
+}
+
+.services-team__title1 {
+  display: block;
+  color: #333333;
+  font-family: 'Kaushan Script';
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 17px;
+  text-align: center;
+  margin-top: 46px;
+}
+
+.services-team__title2 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 64px;
+
+  &::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin-top: 40px;
+  }
+}
